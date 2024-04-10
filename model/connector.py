@@ -1,4 +1,4 @@
-import note
+import model.note as note
 
 
 def write_file(array, mode):

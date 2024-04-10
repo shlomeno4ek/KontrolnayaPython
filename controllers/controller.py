@@ -19,12 +19,12 @@ def change_commands(command):
 
 def is_valid_command(command):
     for com in cmd.Commands:
-        if com == command:
+        if com.name == command:
             return True
     return False
 
 
 def is_exit(command):
-    if command == cmd.Commands.exit:
+    if command == cmd.Commands.exit.name:
         return True
     return False

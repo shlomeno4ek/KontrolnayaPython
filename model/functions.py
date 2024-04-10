@@ -1,5 +1,5 @@
-import note
-import connector
+import model.note as note
+import model.connector as connector
 
 
 def show(number):
