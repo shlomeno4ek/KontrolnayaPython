@@ -19,10 +19,13 @@ def read_file():
         notes = file.read().strip().split("\n")
         for n in notes:
             split_n = n.split(';')
+            print(split_n)
             note = note.Note(
-                id = split_n[0], title = split_n[1], body = split_n[2], date = split_n[3])
+                id=split_n[0], title=split_n[1], body=split_n[2], date=split_n[3])
+            print(note.to_string())
             array.append(note)
     except Exception:
+        # print()
         print('Нет сохраненных заметок...')
     finally:
         return array
