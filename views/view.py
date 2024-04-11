@@ -2,7 +2,7 @@ import controllers.controller as ctrl
 
 
 def menu():
-    print("\n\nИмеются следующие команды:\n\n"
+    print("\nИмеются следующие команды:\n\n"
           "all - вывод всех заметок из файла\n"
           "add - добавление заметки\n"
           "delete - удаление заметки\n"
@@ -14,9 +14,6 @@ def menu():
 
 
 def start():
-
-
-
     print("Это программа 'Заметки'.")
     flag = True
     while flag:

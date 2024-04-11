@@ -3,7 +3,7 @@ import uuid
 
 
 class Note:
-    def __init__(self, id = str(uuid.uuid1())[0:3],  title = "текст", body = "текст", date = str(datetime.now().strftime("%d.%m.%Y %H:%M:%S"))):
+    def __init__(self, id = str(uuid.uuid1())[0:3],  title = "Название заметки", body = "Текст заметки", date = str(datetime.now().strftime("%d.%m.%Y %H:%M:%S"))):
         self.id = id
         self.title = title
         self.body = body
@@ -22,7 +22,8 @@ class Note:
         return note.date
 
     def set_id(note):
-        note.id = str(uuid.uuid1())[0:3]
+        # note.id = str(uuid.uuid1())[0:3]
+        note.id = id
 
     def set_title(note, title):
         note.title = title
@@ -32,6 +33,7 @@ class Note:
 
     def set_date(note):
         note.date = str(datetime.now().strftime("%d.%m.%Y %H:%M:%S"))
+
 
     def to_string(note):
         return note.id + ';' + note.title + ';' + note.body + ';' + note.date

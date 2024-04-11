@@ -17,7 +17,6 @@ def show(number):
             logic = False
             if id == model.note.Note.get_id(notes):
                 print(model.note.Note.map_note(notes))
-            # print('ID: ' + model.note.Note.get_id(notes))
         if number == 5:
             logic = False
             if date in model.note.Note.get_date(notes):
